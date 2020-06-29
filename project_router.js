@@ -1,6 +1,6 @@
 const express = require('express');
 const db = require('./data/projects');
-const taskDb = require('./data/tasks');
+const taskRouter = require('./task_router');
 const { loadProject, validateProjectBody } = require('./project_middleware');
 
 const router = express.Router();
@@ -49,16 +49,6 @@ router.delete('/:project_id', loadProject, async (req, res) => {
 	}
 });
 
-router.get('/:project_id/tasks', loadProject, async (req, res) => {
-	try {
-		const tasks = await taskDb.getTasks(req.project.id);
-		res.json(tasks);
-	} catch (ex) {
-		console.error(ex);
-		res.status(500).json({
-			error: 'Failed to fetch tasks for project.'
-		});
-	}
-});
+router.use('/:project_id/tasks', loadProject, taskRouter);
 
 module.exports = router;
