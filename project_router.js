@@ -49,6 +49,4 @@ router.delete('/:project_id', loadProject, async (req, res) => {
 	}
 });
 
-router.use('/:project_id/tasks', loadProject, taskRouter);
-
 module.exports = router;

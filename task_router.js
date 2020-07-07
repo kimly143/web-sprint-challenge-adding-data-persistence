@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.get('/', async (req, res) => {
     try {
-        const tasks = await db.getTasks(req.project.id);
+        const tasks = await db.getTasks();
         res.json(tasks);
     } catch (ex) {
         console.error(ex);
@@ -16,10 +16,9 @@ router.get('/', async (req, res) => {
     }
 })
 
-router.post('/', async (req, res) => {
+router.post('/', validateTaskBody, async (req, res) => {
     try {
-        const task = { ...req.body, project_id: req.project.id };
-        const newTask = await db.createTask(task);
+        const newTask = await db.createTask(req.bpdy);
         res.status(201).json(newTask);
     } catch (ex) {
         console.error(ex);

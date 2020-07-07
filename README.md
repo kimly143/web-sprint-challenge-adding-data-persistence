@@ -81,11 +81,11 @@ Your finished project must include all of the following requirements:
   - [x] when adding `projects` the client must provide a name, the description is optional.
   - [X] when adding `resources` the client must provide a name, the description is optional.
   - [X] when adding a `task` the client must provide a description, the notes are optional.
-  - [ ] when adding a `task` the client must provide the `id` of an existing project.
+  - [x] when adding a `task` the client must provide the `id` of an existing project.
   - [X] for `projects` and `tasks` if no value is provided for the `completed` property, the API should provide a default value of `false`.
-- [ ] Build an API with endpoints for:
-  - [ ] adding resources.
-  - [ ] retrieving a list of resources.
+- [X] Build an API with endpoints for:
+  - [X] adding resources.
+  - [X] retrieving a list of resources.
   - [x] adding projects.
   - [x] retrieving a list of projects.
   - [x] adding tasks.
@@ -97,10 +97,10 @@ In your solution, it is essential that you follow best practices and produce cle
 
 After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals:
 
-- [ ] Add an endpoint to get a list of project resources.
-- [ ] Add an endpoint to get a list of project tasks.
-- [ ] Add an endpoint to see all projects using a particular resource.
-- [ ] Add support for assigning `resources` directly to `tasks` in addition to adding them to `projects`
+- [x] Add an endpoint to get a list of project resources.
+- [x] Add an endpoint to get a list of project tasks.
+- [x] Add an endpoint to see all projects using a particular resource.
+- [x] Add support for assigning `resources` directly to `tasks` in addition to adding them to `projects`
 
 ## Submission format
 
