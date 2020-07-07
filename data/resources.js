@@ -22,8 +22,8 @@ const getResource = (id) => {
 
 module.exports = {
 	getAllResources,
-	getResource
-	// createResource,
+	getResource,
+	createResource,
 	// updateResource,
 	// deleteResource
 };
