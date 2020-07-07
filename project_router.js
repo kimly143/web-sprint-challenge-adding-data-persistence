@@ -1,6 +1,6 @@
 const express = require('express');
 const db = require('./data/projects');
-const taskRouter = require('./task_router');
+const taskRouter = require('./projectTask_router');
 const { loadProject, validateProjectBody } = require('./project_middleware');
 
 const router = express.Router();
@@ -48,5 +48,7 @@ router.delete('/:project_id', loadProject, async (req, res) => {
 		res.status(500).json({ error: 'Failed to delete project' });
 	}
 });
+
+router.use('/:project_id/tasks', loadProject, taskRouter);
 
 module.exports = router;

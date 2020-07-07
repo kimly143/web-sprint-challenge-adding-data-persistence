@@ -97,10 +97,10 @@ In your solution, it is essential that you follow best practices and produce cle
 
 After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals:
 
-- [x] Add an endpoint to get a list of project resources.
+- [] Add an endpoint to get a list of project resources.
 - [x] Add an endpoint to get a list of project tasks.
-- [x] Add an endpoint to see all projects using a particular resource.
-- [x] Add support for assigning `resources` directly to `tasks` in addition to adding them to `projects`
+- [] Add an endpoint to see all projects using a particular resource.
+- [] Add support for assigning `resources` directly to `tasks` in addition to adding them to `projects`
 
 ## Submission format
 
